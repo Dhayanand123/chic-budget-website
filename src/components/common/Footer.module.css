@@ -1,0 +1,25 @@
+.footer {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,82,1) 35%, rgba(0,212,255,1) 100%);
+
+
+
+  
+  color: white;
+  padding-top: 50px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  height: fit-content;
+  width: 100%;
+  flex-direction: column;
+  min-height: 2vh;
+  margin-top: auto;
+  transition: transform 0.1s ease-in-out; /* Smooth transition */
+  transform: translateY(100%); /* Hide the footer initially */
+}
+
+.footer.max {
+  transform: translateY(0%); /* Hide the footer initially */
+}

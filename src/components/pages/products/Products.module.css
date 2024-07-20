@@ -1,0 +1,224 @@
+.products {
+  margin-top: 40px;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 20px; /* Space between grid items */
+}
+
+.product {
+  background-color: rgb(218, 219, 218);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(209, 170, 170, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.productImage {
+  width: 100%;
+  height: auto; /* Ensures the image maintains its aspect ratio */
+  max-height: 200px; /* Adjust the maximum height as needed */
+  object-fit: contain; /* Fits the entire image within the container */
+  border-radius: 8px;
+}
+
+.productImage:hover {
+  content: center;
+  scale: 1.6;
+  animation-delay: 0ms;
+}
+
+.productInfo {
+  padding: 10px 0;
+}
+
+.productName {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.productDescription {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.productPrice {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: rgb(11, 1, 1); /* Pleasant green color */
+}
+
+.productButton {
+  background-color: yellow; /* Pleasant green color */
+  color: #830808;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.productButton:hover {
+  background-color:#830808; /* Darker shade of green on hover */
+}
+/*
+.popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 128, 0, 0.9); 
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+*/
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(99, 91, 106); /* Semi-transparent white */
+
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(9, 52, 58, 0.2);
+  z-index: 1000;
+}
+
+.popupContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popupActions {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.quantityInput {
+  margin: 10px 0;
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+}
+
+.confirmButton,
+.cancelButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirmButton {
+  background-color: #3c85b3; /* Pleasant green color */
+  color: #fff;
+}
+
+.confirmButton:hover {
+  background-color: #2e608b; /* Darker shade of green on hover */
+}
+
+.cancelButton {
+  background-color: #ccc; /* Grey color */
+  color: #000;
+}
+
+.cancelButton:hover {
+  background-color: #999; /* Darker grey on hover */
+}
+
+/* Products.module.css */
+
+.categoryFilter {
+  margin-bottom: 20px;
+}
+
+.categoryFilter button {
+  font-size: 16px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.categoryFilter button:hover {
+  background-color: #e0e0e0;
+}
+
+.categoryFilter button.active {
+  background: rgb(235,235,235);
+  background: radial-gradient(circle, rgba(235,235,235,1) 00%, rgba(148,187,233,1) 100%);
+  color: white;
+  border-color: #27815d;
+}
+
+.quantityInput {
+  margin-top: 10px;
+  padding: 5px;
+  width: 60px;
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filterGroup {
+  display: flex;
+  align-items: right;
+  margin-left: 1200px;
+  margin-top: -70px;
+  padding: 20px;
+}
+
+.filterGroup span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.filterGroup button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.filterGroup button.active {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.filterGroup select {
+  padding: 5px;
+}

@@ -1,0 +1,112 @@
+.about {
+  margin-top: 40px;
+  height: fit-content; /* Ensure full viewport height */
+  position: relative; /* Needed for the pseudo-element */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Align children to the start of the cross axis (left) */
+  padding: 20px; /* Add some padding around the edges */
+  background-color: #f7f4f4; /* Light gray background */
+  color: #333; /* Dark text color for readability */
+}
+
+
+
+.content {
+  position: relative; /* To ensure content is above the overlay */
+  z-index: 2;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 3rem;
+  margin: 0;
+  position: absolute;
+  top: 20px; /* Position heading from the top */
+  left: 20px; /* Position heading from the left */
+  color: #010a01; /* Pleasant green color for the heading */
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  margin: 0;
+  position: absolute;
+  top: 70px; /* Position paragraph from the top */
+  left: 50%; /* Center paragraph horizontally */
+  transform: translateX(
+    -50%
+  ); /* Offset half of its width for perfect centering */
+}
+
+.section {
+  margin-top: 120px; /* Position section below the heading and paragraph */
+  background: rgba(255, 255, 255, 0.8); /* Light background for readability */
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  color: #333; /* Dark text for readability */
+}
+
+.sectionHeading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #011001; /* Pleasant green color */
+}
+
+.sectionParagraph {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.valuesSection {
+  margin-top: 120px; /* Position section below the heading and paragraph */
+  background: rgba(255, 255, 255, 0.8); /* Light background for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.valuesContainer {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 300px;
+  justify-content: center;
+  margin-top: 20px;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.valueItem {
+  flex: 1;
+  background: #d8efd3;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+.valueIcon {
+  width: 60px; /* Adjust size as needed */
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.valueItem strong {
+  color: #000800; /* Pleasant green color */
+}
+
+.valueItem p {
+  font-size: 1rem;
+  color: #333;
+}

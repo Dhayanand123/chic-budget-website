@@ -1,0 +1,100 @@
+.contact {
+  margin-top: 40px;
+  display: flex;
+  height: 600px;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.contactForm {
+  flex: 1;
+  width: 50%;
+  background-color: whitesmoke;
+  max-width: 70%;
+  height: 100%;
+  padding-left: 50px;
+  
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  display: block;
+  padding-left: 10%;
+  width: 70%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 70%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submitButton {
+  background-color: #010a05;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #010b06;
+}
+h2 {
+  color: #01020b;
+}
+p {
+  font-size: large;
+}
+.contactInfo {
+  flex: 1;
+  margin-top: -10px;
+  max-width: 400px;
+  height: 100%;
+  background-color: #f5faf4;
+  padding: 2%;
+}
+
+.address {
+  margin-bottom: 20px;
+}
+
+.infoList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.infoList li {
+  margin-bottom: 10px;
+}
+
+.hours {
+  margin-top: 20px;
+}

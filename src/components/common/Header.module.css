@@ -1,0 +1,95 @@
+.header {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,82,1) 35%, rgba(0,212,255,1) 100%);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.header.minimized {
+  padding: 5px 15px; /* Reduced padding for minimized state */
+}
+.header.minimized .navItem .navItem1 .navItem2 {
+  margin: 0 30px;
+}
+.title {
+  margin: 0;
+  margin-left: -820px;
+  font-size: 3rem;
+  transition: opacity 0.1s ease-in-out; /* Smooth opacity transition */
+}
+
+.header.minimized .title {
+  height: 20px;
+
+  opacity: 0; /* Hide the title in minimized state */
+}
+
+.header.minimized .logoContainer {
+  height: 3px;
+  margin-top: 50px;
+  margin-right: 150px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fdfdfd;
+}
+.logo {
+  position:sticky;
+  margin-left: -850px;
+  height: 100px;
+  margin-top: -70px;
+  border-color: black;
+  border-radius: 50%;
+}
+
+.navList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.navItem1,
+#login {
+  right: 0;
+  position: fixed;
+}
+.navItem2 {
+  right: 100px;
+  position: fixed;
+}
+
+.navItem,
+.navItem2,
+#login {
+  font-size: large;
+  display: inline-block;
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navItem1{
+  background-color: rgb(252, 249, 249);
+}
+
+.navItem:hover,
+.navItem1:hover,
+.navItem2:hover,
+#login {
+  text-decoration: underline;
+}
+
+body {
+  padding-top: 60px; /* Adjust this value based on the header height */
+}

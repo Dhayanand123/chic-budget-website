@@ -1,0 +1,26 @@
+.products {
+  /* Your existing styles */
+}
+
+.heading {
+  /* Your existing styles */
+}
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.popup {
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 8, 13, 0.9); /* Semi-transparent green */
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
